@@ -1,13 +1,418 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap");
+
+* {
+  font-family: sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ocultar {
+  display: none;
+}
+
+.app{
+  height: 100vh;
+  background: url("../public/img/svg.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:visited{
+  text-decoration: none;
+}
+
+Body{
+  height: 92vh;
+}
+
+.boton-luz{
+  color: rgb(0, 0, 0);
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.boton-luz-oscuro{
+  color: rgb(255, 255, 255);
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.icon{
+  display: flex;
+  margin-left: auto;
+  margin-right: 15px;
+  margin-top: 15px;
+  transform: scale(2);
+}
+
+
+
+
+/*Barra de navegacion escritorio*/
+
+.nav {
+  list-style-type: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-bottom: 1px solid black;
+  height: 8vh;
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  margin: 0px 10px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav li:hover {
+  background-color: rgba(131, 131, 131, 0.5);
+}
+
+.nav li:last-child {
+  margin-left: auto;
+  cursor: default;
+}
+
+.nav li:last-child:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/*Pagina de inicio*/
+
+.contenedor-inicio {
+  display: flex;
+  flex-direction: column;
+  min-height: 15vh;
+  width: 80vw;
+  margin: 20vh auto;
+}
+
+.contenedor-inicio h1 {
+  margin: 2vh 0;
+}
+
+.contenedor-inicio p {
+  margin: 2vh 0;
+}
+
+/*Modals*/
+
+.modal-fondo {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.modal-contenedor {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 2px 0px 21px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 0px 21px 0px rgba(0, 0, 0, 0.5);
+  width: 60vw;
+  height: 70vh;
+  margin: 15vh 20vw;
+  border-radius: 10px;
+}
+
+.modal-header {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header-select select {
+  background-color: rgba(213, 210, 207, 1);
+  margin: 2vh 0 2vh 0;
+  height: 2em;
+  font-size: 1.2em;
+  text-align: center;
+  width: 70%;
+  border: none;
+  border-radius: 5px;
+}
+
+.modal-header-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-header-button button {
+  cursor: pointer;
+  border: none;
+  margin: 2% 2%;
+  padding: 1%;
+  border-radius: 10px;
+  background-color: rgba(213, 210, 207, 1);
+  color: black;
+}
+
+.modal-header-contenido {
+  display: flex;
+  align-self: center;
+  margin: auto 0;
+}
+
+.modal-cuerpo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50%;
+}
+
+.modal-acerca-header {
+  height: 30%;
+}
+
+.modal-acerca-header h1 {
+  text-align: center;
+}
+
+.modal-acerca-cuerpo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50%;
+  margin: 10vh 0 0 0;
+}
+
+.modal-acerca-cuerpo p {
+  margin: 1vh 2vw;
+}
+
+.modal-opciones {
+  height: 70%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal-opciones:hover {
+  background-color: rgba(95, 95, 96, 0.36);
+}
+
+.modal-opciones h2 {
+  margin: 3%;
+}
+
+.modal-opciones p {
+  font-size: 2em;
+}
+
+.modal-header-button button:hover {
+  background-color: rgba(131, 131, 131, 0.3);
+}
+
+/*Modals en dispositivos mobiles*/
+
+@media screen and (max-width: 750px) {
+  .modal-contenedor {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 2px 0px 21px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 0px 21px 0px rgba(0, 0, 0, 0.5);
+    width: 80vw;
+    height: 80vh;
+    margin: 10vh 10vw;
+    border-radius: 10px;
+  }
+
+  .modal-header-select select {
+    background-color: rgba(213, 210, 207, 1);
+    margin: 2vh 0 2vh 0;
+    height: 2em;
+    font-size: 1em;
+    text-align: center;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .modal-header {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-header h1,
+  p {
+    text-align: center;
+  }
+
+  .modal-cuerpo {
+    display: flex;
+    height: 75%;
+    flex-direction: column;
+  }
+
+  .modal-opciones {
+    display: flex;
+    height: 30%;
+    width: 70%;
+  }
+
+  .modal-acerca-header h1 {
+    margin: 5vh 0 0 0;
+  }
+
+  .modal-acerca-cuerpo {
+    margin: 5vh 0 0 0;
+  }
+}
+
+/*Aca empiezan las herramientas*/
+
+/*Modal dos*/
+
+.medidas div{
+  display: flex;
+}
+
+.medidas div input{
+  width: 60%;
+  margin: 0.5vh 5% 0.5vh 10%;
+}
+
+.medidas span{
+  width: 20%;
+}
+
+
+/*Herramientas : */
+
+.modal-fondo-herramienta{
+background-color: rgba(0, 0, 0, 0.25);
+position: absolute;
+top: 0;
+height: 100%;
+width: 100%;
+}
+
+
+.contenedor-herramientas{
+padding : 5vh; 
+width : 60vw;
+margin : 25vh 20vw;
+border-radius : 10px; 
+text-align: center;
+background-color: rgba(255, 255, 255,1);
+box-shadow: 2px 0px 21px 0px rgba(0,0,0,0.50);
+-webkit-box-shadow: 0px 3px 21px 0px rgba(0,0,0,0.50);
+-moz-box-shadow: 2px 0px 21px 0px rgba(0,0,0,0.50);
+}
+
+.contenedor-partes{
+margin: 2vh 0
+}
+
+
+.botones-herramientas{
+font-weight: 600;
+color: rgba(44, 57, 211, 1);
+background-color: rgba(213, 210, 207, 1);
+padding: 3px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+}
+
+
+.activo{
+font-weight: 600;
+color: white;
+background-color: rgba(44, 57, 211, 1);
+padding: 5px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+}
+
+.contenedor-herramientas input{
+color: #504840;
+background-color: rgba(213, 210, 207, 1);
+padding: 5px;
+border: none;
+border-radius: 3px;
+margin: 1vh 0;
+width: 70%;
+}
+
+.contenedor-herramientas input::placeholder{
+color: #504840;
+}
+
+
+@media screen and (max-width: 460px){
+.contenedor-herramientas{
+  width : 80vw;
+  margin : 25vh 10vw;
+}
+
+
+.contenedor-herramientas input{
+  width: 50%;
+}
+}
+
+/*Modo oscuro*/
+
+.oscuro{
+color: white;
+background-color: black;
+}
+
+.oscuro button{
+  background-color: rgb(189, 189, 189);
+  color: rgba(44, 57, 211, 1);
+}
+
+.oscuro a{
+  color: white;
+}
+
+.oscuro-nav{
+  border-bottom: 1px solid white;
+  color: white;
+  background-color: black;
+}
+
+.modal-fondo-claro{
+  background-color: rgba(255, 255, 255, 0.265);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
