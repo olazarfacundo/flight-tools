@@ -21,12 +21,12 @@ export default function AcercaDe(props){
 
                 <p>
                     Todo el codigo que forma a esta pagina es totalmente publico y lo podes encontrar en 
-                    <a href="https://github.com/olazar.facundo" target="_blank" rel="noopener noreferrer"> <b>github.com/olazarfacundo</b></a>
+                    <a href="https://github.com/olazarfacundo" target="_blank" rel="noopener noreferrer"> <b>github.com/olazarfacundo</b></a>
                 </p>
 
                 <p>
-                    Si encontraste algun error, o tenes alguna consulta, podes contactarte conmigo a
-                    olazar.facundo@gmail.com
+                    Para cualquier consulta podes contactarte conmigo a
+                    <a href="mailto:olazar.facundo@gmail.com" target="_blank"> <b>olazar.facundo@gmail.com</b></a>
                 </p>
 
             </div>

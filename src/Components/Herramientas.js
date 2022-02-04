@@ -29,8 +29,6 @@ export default function Herramientas(props) {
         setMedidas(prev => !prev)
     }
 
-    console.log(props.modoOscuro)
-
     return (
         <div className={props.modoOscuro ? "modal-fondo-claro" : "modal-fondo-herramienta"} id="modalFondoHerramientas">
             <div className={props.modoOscuro ? "modal-contenedor oscuro" : "modal-contenedor"} id="modalContenedor">

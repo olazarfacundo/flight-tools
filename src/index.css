@@ -66,6 +66,10 @@ Body{
   transform: scale(2);
 }
 
+.icon:hover{
+  cursor: pointer;
+}
+
 
 
 
@@ -212,6 +216,7 @@ Body{
   height: 70%;
   width: 30%;
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
   text-align: center;
   border-radius: 10px;
