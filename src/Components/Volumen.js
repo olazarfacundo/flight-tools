@@ -1,18 +1,17 @@
-import React from "react"
-import { useState } from "react/cjs/react.development"
+import React, { useState } from "react"
 
 export default function CalculoVolumen() {
 
     const [litros, setLitros] = useState(0)
     const [galones, setGalones] = useState(0)
 
-    function calcularLitros(event){
+    function calcularLitros(event) {
         const valorLitros = event.target.value
         setLitros(valorLitros)
         setGalones(valorLitros * 3.7854)
     }
 
-    function calcularGalones(event){
+    function calcularGalones(event) {
         const valorGalones = event.target.value
         setGalones(valorGalones)
         setLitros(valorGalones * 0.264172)
@@ -23,10 +22,10 @@ export default function CalculoVolumen() {
             <form>
                 <div>
 
-                    <input placeholder='Galones USA' value={litros} onChange={calcularLitros}/> <span>GAL</span>
+                    <input placeholder='Galones USA' value={litros} onChange={calcularLitros} /> <span>GAL</span>
                 </div>
                 <div>
-                    <input placeholder='Litros' value={galones} onChange={calcularGalones}/> <span>LT</span>
+                    <input placeholder='Litros' value={galones} onChange={calcularGalones} /> <span>LT</span>
                 </div>
             </form>
         </div>

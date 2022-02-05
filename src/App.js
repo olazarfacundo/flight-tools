@@ -1,7 +1,7 @@
 import React from "react"
 import Navbar from "./Components/Navbar";
 import Body from "./Components/Body";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon } from "@fortawesome/free-solid-svg-icons"
 import { faSun } from "@fortawesome/free-solid-svg-icons"
