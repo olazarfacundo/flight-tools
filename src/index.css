@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap");
 
-* {
+*{
   font-family: sans-serif;
   margin: 0;
   padding: 0;
@@ -44,6 +44,9 @@ Body{
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .boton-luz-oscuro{
@@ -56,13 +59,12 @@ Body{
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon{
-  display: flex;
-  margin-left: auto;
-  margin-right: 15px;
-  margin-top: 15px;
   transform: scale(2);
 }
 
@@ -145,6 +147,18 @@ Body{
   height: 70vh;
   margin: 15vh 20vw;
   border-radius: 10px;
+}
+
+@keyframes aparecer{
+  0%{
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .modal-header {
@@ -254,6 +268,7 @@ Body{
     margin: 10vh 10vw;
     border-radius: 10px;
   }
+
 
   .modal-header-select select {
     background-color: rgba(213, 210, 207, 1);
@@ -395,8 +410,8 @@ color: #504840;
 /*Modo oscuro*/
 
 .oscuro{
-color: white;
-background-color: black;
+  color: white;
+  background-color: #121212;
 }
 
 .oscuro button{
@@ -411,11 +426,11 @@ background-color: black;
 .oscuro-nav{
   border-bottom: 1px solid white;
   color: white;
-  background-color: black;
+  background-color: #121212;
 }
 
 .modal-fondo-claro{
-  background-color: rgba(255, 255, 255, 0.265);
+  background-color: rgba(255, 255, 255, 0.1);
   position: absolute;
   top: 0;
   height: 100%;
