@@ -8,8 +8,8 @@ La navegacion aerea tiene como objetivo ser lo mas efeciente y segura posible, t
 
 Cuales son estas herramientas? 
 
-*Calcular el tiempo de vuelo entre el punto A y B.
-*Calcular el consumo de un vuelo en minutos u horas.
-*Convertir cualquier tipo de unidades de medicion (Volumen, peso, longitud, tiempo y presion)
+ - Calcular el tiempo de vuelo entre el punto A y B.
+ - Calcular el consumo de un vuelo en minutos u horas.
+ - Convertir cualquier tipo de unidades de medicion (Volumen, peso, longitud, tiempo y presion)
 
 Espero que te sirva!
