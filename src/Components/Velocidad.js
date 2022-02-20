@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 
 export default function CalculoVelocidad() {
 
-    const [kilometros, setKilometros] = useState(0)
-    const [millas, setMillas] = useState(0)
-    const [nudos, setNudos] = useState(0)
+    const [kilometros, setKilometros] = useState()
+    const [millas, setMillas] = useState()
+    const [nudos, setNudos] = useState()
 
     function calcularKmh(event) {
         const valorKilometros = event.target.value
