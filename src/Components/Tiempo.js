@@ -2,8 +2,8 @@ import React , {useState} from "react"
 
 export default function CalculoTiempo(){
 
-    const [horas, setHoras] = useState(0)
-    const [minutos, setMinutos] = useState(0)
+    const [horas, setHoras] = useState()
+    const [minutos, setMinutos] = useState()
 
     function calcularHoras(event){
         const valorHoras = event.target.value
