@@ -2,8 +2,8 @@ import React, { useState } from "react"
 
 export default function CalculoVolumen() {
 
-    const [litros, setLitros] = useState(0)
-    const [galones, setGalones] = useState(0)
+    const [litros, setLitros] = useState()
+    const [galones, setGalones] = useState()
 
     function calcularLitros(event) {
         const valorLitros = event.target.value
