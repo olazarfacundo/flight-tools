@@ -2,8 +2,8 @@ import React, { useState } from "react"
 
 export default function CalculoMasa() {
 
-    const [kilos, setKilos] = useState(0)
-    const [libras, setLibras] = useState(0)
+    const [kilos, setKilos] = useState()
+    const [libras, setLibras] = useState()
 
     function calcularKilos(event){
         setKilos(event.target.value)
