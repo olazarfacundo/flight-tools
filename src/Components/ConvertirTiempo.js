@@ -1,7 +1,7 @@
 import React, {useState , useEffect} from "react"
 
 export default function ConvertirTiempo(props){
-    const [tiempoDeVuelo, setTiempoDeVuelo] = useState(0)
+    const [tiempoDeVuelo, setTiempoDeVuelo] = useState()
 
     const [velocidadIn, setVelocidadIn] = useState("Velocidad")
     const [distanciaIn, setDistanciaIn] = useState("Distancia")
@@ -9,8 +9,8 @@ export default function ConvertirTiempo(props){
     const [unidadVelocidad, setUnidadVelocidad] = useState("kmh")
     const [unidadDistancia, setUnidadDistancia] = useState("km")
     
-    const [velocidadFinal, setVelocidadFinal] = useState(0)
-    const [distanciaFinal, setDistanciaFinal] = useState(0)
+    const [velocidadFinal, setVelocidadFinal] = useState()
+    const [distanciaFinal, setDistanciaFinal] = useState()
 
     function toggleModal() {
         props.set(prev => !prev)
