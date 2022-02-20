@@ -2,11 +2,11 @@ import React, { useState } from "react"
 
 export default function CalculoLongitud() {
 
-    const [metros, setMetros] = useState(0)
-    const [kilometros, setKilometros] = useState(0)
-    const [millas, setMillas] = useState(0)
-    const [millasNauticas, setMillasNauticas] = useState(0)
-    const [pies, setPies] = useState(0)
+    const [metros, setMetros] = useState()
+    const [kilometros, setKilometros] = useState()
+    const [millas, setMillas] = useState()
+    const [millasNauticas, setMillasNauticas] = useState()
+    const [pies, setPies] = useState()
 
     function calcularMetros(event) {
         const valorMetros = event.target.value
