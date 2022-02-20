@@ -2,11 +2,11 @@ import React, { useState } from "react"
 
 export default function CalculoPresion() {
 
-    const [bares, setBares] = useState(0)
-    const [psi, setPsi] = useState(0)
-    const [isa1013, setIsa1013] = useState(0)
-    const [isa2992, setIsa2992] = useState(0)
-    const [isa760, setIsa760] = useState(0)
+    const [bares, setBares] = useState()
+    const [psi, setPsi] = useState()
+    const [isa1013, setIsa1013] = useState()
+    const [isa2992, setIsa2992] = useState()
+    const [isa760, setIsa760] = useState()
 
     function calcularBares(event) {
         const valorBares = event.target.value
