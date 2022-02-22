@@ -17,10 +17,10 @@ export default function AcercaDe(props){
             </div>
 
             <div className="modal-acerca-cuerpo">
-                <p>Flight Tools no tiene ningun derecho registrado ni nada parecido.</p>
+                <p>Flight Tools.</p>
 
                 <p>
-                    Todo el codigo que forma a esta pagina es totalmente publico y lo podes encontrar en 
+                    Todo el codigo que forma a esta pagina es totalmente publico, libre y lo podes encontrar en 
                     <a href="https://github.com/olazarfacundo" target="_blank" rel="noopener noreferrer"> <b>github.com/olazarfacundo</b></a>
                 </p>
 
